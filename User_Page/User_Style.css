@@ -1,0 +1,35 @@
+body {
+    background-color: #E3DFDF;
+    align-items: center;
+    text-align: center;
+}
+
+/* Titre de la page */
+body h1 {
+    -webkit-text-fill-color: white; /* Change la couleur intérieur du texte */
+    -webkit-text-stroke: yellow 1px; /* Change la couleur des bordures du texte */
+    font-family: fantasy;
+    text-shadow: 7px 5px 3px black; /* Rajoute une ombre au texte */
+}
+
+/* Phrase de présentation des tableaux */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles des tableaux */
+table , tr, td, th {
+    border: 2px solid black;
+    padding: 1vh 5vh;
+    border-radius: 15px;
+}
+
+#visualisationTable, #historiqueTable {
+    margin: 5vh auto;
+}
+
+/* Pied de page */
+footer {
+    text-align: center; /* Cela centre le texte dans le pied de page */
+    margin-top: 200px; /* Espace en haut du pied de page */
+}

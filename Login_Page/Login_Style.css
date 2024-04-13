@@ -1,0 +1,28 @@
+body {
+    margin-top: 20vh;
+    background-color:rgba(0, 0, 0, 0.9);
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+#logInSection {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 60vh;
+    padding-top: 11vh;
+    padding-bottom: 13vh;
+    margin: auto;
+    border: 5px solid gray;
+    border-radius: 20%;
+}
+
+#connectBtn {
+    font-family: fantasy;
+    color: white;
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 15px;
+}

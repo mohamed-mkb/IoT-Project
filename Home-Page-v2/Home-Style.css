@@ -1,0 +1,98 @@
+html {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Logo de la barre de navigation */
+#logo {
+    width: 10vh;
+    border-radius: 100%;
+    margin-right: 30vh;
+}
+
+/* Titre dans la barre de nav */
+#navTitle {
+    font-family: cursive;
+    font-size: x-large;
+    text-shadow: 7px 5px 3px black;
+}
+/* Barre de navigation */
+#navBarre {
+    display: flex;
+    height: 10vh;
+    color: white;
+    margin-bottom: 15vh;
+}
+
+/* Div avec les bouton dans la barre de nav */
+#navBtnDiv {
+    margin-left: 31.45%;
+    background-color: white;
+    padding-left: 7vh;
+    border-top-left-radius: 15vh;
+    border-bottom-left-radius: 15vh;
+}
+
+/* Bouton de la barre de navigation */
+#navBarre button {
+    margin: 2.5vh 4.7vh 2.5vh 2.5vh;
+    padding: 1.5vh 3vh;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+/* Bouton de la barre de navigation quand survolés */
+#navBarre button:hover {
+    margin: 2.5vh 4.7vh 2.5vh 2.5vh;
+    padding: 1.5vh 3vh;
+    color: white;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+/* Div avec le Titre + Slogan */
+#bodyDiv {
+    display: flex;
+}
+
+/* Titre du projet */
+#projectTitle {
+    text-align: center;
+    font-size: 100px;
+    font-family: fantasy;
+    font-style: oblique;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 4px;
+    background-color: white;
+    width: 100vh;
+    padding-top: 20vh;
+    padding-bottom: 24vh;
+    border-top-right-radius: 35vh;
+    border-bottom-right-radius: 35vh;
+    text-shadow: 13px 10px 5px black;
+    border: 2px solid black;
+}
+
+/* Slogan */
+#citation {
+    text-align: center;
+    background-color: white;
+    font-family: fantasy;
+    font-style: oblique;
+    font-size: x-large;
+    padding-top: 18vh;
+    padding-right: 15px;
+    padding-left: 5px;
+    margin-left: 7em;
+    border-top-left-radius: 35vh;
+    border-bottom-left-radius: 35vh;
+    border: 2px solid black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+    text-shadow: 4px 4px 2px black;
+
+}
