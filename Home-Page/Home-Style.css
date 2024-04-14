@@ -2,6 +2,7 @@ html {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+
 /* Animation de rotation */
 @keyframes rotation {
     from {
@@ -17,7 +18,7 @@ html {
     width: 10vh;
     border-radius: 100%;
     margin-right: 30vh;
-    animation: rotation 6s linear infinite;
+    animation: rotation 4s linear infinite;
 }
 
 /* Titre dans la barre de nav */
@@ -107,3 +108,4 @@ html {
     text-shadow: 4px 4px 2px black;
 
 }
+
