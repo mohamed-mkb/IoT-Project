@@ -61,21 +61,83 @@
             Mot de passe : <br>
             <input type="text" name="mdp"> <br>
 
-            Admin :  <input type="checkbox" name="Admin" value="Admin"> <br>
+            Admin :  <input type="checkbox" name="adminis" value="adminis"> <br>
 
-            <input type="button" name="Valider" value="Valider">
+            <input type="submit" name="button1" value="Valider">
         </form>
 
         <form method="post" id="delUser">
             <h3>Supprimer un utilisateur :</h3>
 
             Identifiant : <br>
-            <input type="text" name="nom"> <br>
+            <input type="text" name="nom2"> <br>
 
-            <input type="button" name="Valider" value="Valider" id="validBtn">
+            <input type="submit" name="button2" value="Valider" id="validBtn">
         </form>
     </div>
 
+    <?php
+        // Lien php bdd
+        include('../../lien.php');
+
+        // Ajouter un utilisateur
+
+        if(isset($_POST['button1'])){
+
+            if( (!empty ($_POST['nom'])) && (!empty ($_POST['mdp'])) ){
+
+                // Vérification que l'utilisateur n'est pas déjà dans la base de donnée
+
+                $n = $_POST['nom'];
+                $m = $_POST['mdp'];
+
+                $sql = "SELECT nom
+                    FROM utilisateurs
+                    WHERE nom = '$n'";
+
+                $result = mysqli_query($conn, $sql);
+
+                $user = mysqli_fetch_row($result);
+
+                if ( mysqli_num_rows($result) > 0 ) 
+                {
+                    die("Utilisateur déjà existant");
+                }else {
+
+                // Ajouter l'utilisateur
+                                    
+                    if(isset($_POST['adminis'])) {
+                        $a = 1;
+                    } else {
+                        $a = 0;
+                    };
+
+                    $sql2 = "INSERT INTO utilisateurs (nom, mdp, adminis) 
+                            VALUES ('$n', '$m', '$a')";
+
+                    mysqli_query($conn, $sql2);
+
+                };
+            };
+        };
+
+        // Supprimer un utilisateur
+
+        if(isset($_POST['button2'])){
+
+            if(!empty($_POST['nom2'])){
+
+                $n2 = $_POST['nom2'];
+
+                $sql3 = "DELETE FROM utilisateurs WHERE nom = '$n2' ";
+
+                mysqli_query($conn, $sql3);
+
+            };
+        };
+
+        
+    ?>
 </body>
 
 <footer>
