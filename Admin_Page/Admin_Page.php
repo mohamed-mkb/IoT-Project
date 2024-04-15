@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="60">
     <title>Admin-Page</title>
-    <link rel="stylesheet" href="Admin_Style.css">
+    <link rel="stylesheet" href="./Admin_Style.css">
 </head>
 
 <nav id="navBarre">
     <img src="../Images/Image-Profil.webp">
     <p>My Admin Session</p>
-    <a href="/IoT-Project/Home-Page/Home-Page.html"><button>Se Déconnecter</button></a>
+    <a href="../Home-Page/Home-Page.html"><button>Se Déconnecter</button></a>
     <a href="../Contact_Page/Contact_Page.html"><button>Contact</button></a>
 </nav>
 
@@ -41,14 +41,14 @@
         Vous pouvez à présent visualiser l'historique des données de température et d'humidité ci-dessous :
     </p>
 
-    <div class="graph_temp">
+    <div class="graph">
         <canvas id="tab_temp">
         </canvas>        
     </div>
 
     <br><br><br><br><br><br><br><br><br><br>
 
-    <div class="graph_hum">
+    <div class="graph">
         <canvas id="tab_hum">
         </canvas>        
     </div>
