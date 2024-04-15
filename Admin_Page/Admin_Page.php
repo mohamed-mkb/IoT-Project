@@ -78,7 +78,7 @@
 
     <?php
         // Lien php bdd
-        include('../../lien.php');
+        include('../PHP/lien.php');
 
         // Ajouter un utilisateur
 

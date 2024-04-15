@@ -18,7 +18,7 @@
 
     <?php
 // Lien php bdd
-    include('../../lien.php');
+    include('../PHP/lien.php');
 
 // fonction pour verifier si l'utilisateur existe
 
