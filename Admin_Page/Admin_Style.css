@@ -5,7 +5,7 @@ body {
 }
 
 /* Barre de navigation utilisateur */
-#navBarre {
+#barreDeNav {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 15px;
@@ -14,7 +14,7 @@ body {
 }
 
 /* Image de profil */
-#navBarre img {
+#barreDeNav img {
     width: 7%;
     height: 7%;
     border-radius: 100%;
@@ -22,7 +22,7 @@ body {
 }
 
 /* Texte dans la navBarre */
-#navBarre p {
+#barreDeNav p {
     font-size: xx-large;
     font-family: fantasy;
     -webkit-text-fill-color: black;
@@ -31,7 +31,7 @@ body {
 }
 
 /* Bouton de la barre de navigation */
-#navBarre button {
+#barreDeNav button {
     margin: 4vh 2vh 4vh 2vh;
     padding: 1.5vh 5vh;
     color: white;
@@ -43,7 +43,7 @@ body {
 }
 
 /* Bouton de la barre de navigation quand survolés */
-#navBarre button:hover {
+#barreDeNav button:hover {
     margin: 4vh 2vh 4vh 2vh;
     padding: 1.5vh 5vh;
     color: white;
@@ -76,21 +76,14 @@ table , tr, td, th {
     margin: 5vh auto;
 }
 
-#addUser {
+#addUser, #delUser{
     background-color: rgba(0, 0, 0, 0.5);
     width: 20%;
     margin: auto;
     padding: 5vh;
     display: inline-block;
     border-radius: 15%;
-}
-
-#delUser {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 20%;
-    padding: 5vh;
-    display: inline-block;
-    border-radius: 15%;
+    margin-top: 7%;
 }
 
 #validBtn {
@@ -110,4 +103,5 @@ footer {
     border: 2px black;
     border-style: dashed;
     border-radius: 15px;
+    margin-top: 5%;
 }
