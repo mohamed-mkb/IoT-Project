@@ -47,7 +47,7 @@
                     header('Location: ../Admin_Page/Admin_Page.php');
                 };
             }else {
-                die("Utilisateur ou mot de passe incorrect");
+                die("<p style = color:white; > \n Utilisateur ou mot de passe incorect </p>");
             };
         };
     };

@@ -32,25 +32,21 @@
         Vous pouvez à présent visualiser l'historique des données de température et d'humidité ci-dessous :
     </p>
 
-    <div class="dataTable">
-        <table id="historiqueTable">
-            <tr>
-                <th>Date / Heure</th>
-                <th>Température</th>
-                <th>Humidité</th>
-            </tr>
-            <tr>
-                <td>26/03/2024  14h58</td>
-                <td>25°C</td>
-                <td>50%</td>
-            </tr>
-            <tr>
-                <td>26/03/2024  15h58</td>
-                <td>26°C</td>
-                <td>54%</td>
-            </tr>
-        </table>        
+    <div class="graph_temp">
+        <canvas id="tab_temp">
+        </canvas>        
     </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <div class="graph_hum">
+        <canvas id="tab_hum">
+        </canvas>        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="../js_graph/tab_temp.js"></script>
+    <script type="module" src="../js_graph/tab_hum.js"></script>
 
 </body>
 

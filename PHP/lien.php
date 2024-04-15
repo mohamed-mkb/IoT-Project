@@ -1,4 +1,3 @@
-<!-- Lien entre la base de donnée et le php -->
 <?php
     $servername = 'localhost';
     $bdname   = 'bdd1';

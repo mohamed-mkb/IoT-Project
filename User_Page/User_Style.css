@@ -33,3 +33,9 @@ footer {
     text-align: center; /* Cela centre le texte dans le pied de page */
     margin-top: 200px; /* Espace en haut du pied de page */
 }
+
+/* Graphique char.js */
+
+.graph_temp {
+    width: 100%;
+}
