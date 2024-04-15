@@ -9,11 +9,47 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 15px;
+    display: flex;
+    margin-bottom: 5%;
 }
 
+/* Image de profil */
 #navBarre img {
-    width: 15%;
+    width: 7%;
+    height: 7%;
     border-radius: 100%;
+    margin: auto 7% auto 1%;
+}
+
+/* Texte dans la navBarre */
+#navBarre p {
+    font-size: xx-large;
+    font-family: fantasy;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: white 1px;
+    margin-right: 37%;
+}
+
+/* Bouton de la barre de navigation */
+#navBarre button {
+    margin: 4vh 2vh 4vh 2vh;
+    padding: 1.5vh 5vh;
+    color: white;
+    background-color: transparent;
+    border-radius: 15px;
+    font-family: cursive;
+    font-size: large;
+    border: 1px solid transparent;
+}
+
+/* Bouton de la barre de navigation quand survolés */
+#navBarre button:hover {
+    margin: 4vh 2vh 4vh 2vh;
+    padding: 1.5vh 5vh;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 15px;
 }
 
 /* Titre de la page */
