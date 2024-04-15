@@ -4,6 +4,18 @@ body {
     text-align: center;
 }
 
+/* Barre de navigation utilisateur */
+#navBarre {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+}
+
+#navBarre img {
+    width: 15%;
+    border-radius: 100%;
+}
+
 /* Titre de la page */
 body h1 {
     -webkit-text-fill-color: white; /* Change la couleur intérieur du texte */
@@ -24,7 +36,8 @@ table , tr, td, th {
     border-radius: 15px;
 }
 
-#visualisationTable, #historiqueTable {
+/* Tableau avec les valeurs en direct */
+#visualisationTable {
     margin: 5vh auto;
 }
 
@@ -35,7 +48,10 @@ footer {
 }
 
 /* Graphique char.js */
-
-.graph_temp {
-    width: 100%;
+.graph {
+    width: auto;
+    margin: auto 15%;
+    border: 2px black;
+    border-style: dashed;
+    border-radius: 15px;
 }

@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
     <title>User-Page</title>
     <link rel="stylesheet" href="User_Style.css">
 </head>
+
+<nav id="navBarre">
+    <img src="./../Images/Profil.webp">
+</nav>
+
 <body>
     <h1>
         Interface Utilisateur
@@ -31,15 +37,17 @@
     <p>
         Vous pouvez à présent visualiser l'historique des données de température et d'humidité ci-dessous :
     </p>
+    
+    <br><br><br>
 
-    <div class="graph_temp">
+    <div class="graph">
         <canvas id="tab_temp">
         </canvas>        
     </div>
 
     <br><br><br><br><br><br><br><br><br><br>
 
-    <div class="graph_hum">
+    <div class="graph">
         <canvas id="tab_hum">
         </canvas>        
     </div>
